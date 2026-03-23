@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CI/CD Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">CI/CD Demo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Status</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>GitLab CI/CD Deployment</h1>
+        <p>Tự động hoá từ code → deploy website</p>
+        <button onclick="showMessage()">Try Now</button>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <h2>Tính năng</h2>
+
+        <div class="feature-container">
+            <div class="card">
+                <h3>Continuous Integration</h3>
+                <p>Tự động build và kiểm tra code mỗi khi push</p>
+            </div>
+
+            <div class="card">
+                <h3>Continuous Deployment</h3>
+                <p>Deploy website tự động lên GitLab Pages</p>
+            </div>
+
+            <div class="card">
+                <h3>Static Website</h3>
+                <p>HTML, CSS, JS đơn giản nhưng hiệu quả</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATUS -->
+    <section class="status">
+        <h2>Pipeline Status</h2>
+        <p id="status-text">Click để kiểm tra</p>
+        <button onclick="checkStatus()">Check Status</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 - CI/CD Demo | GitLab Pages</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
