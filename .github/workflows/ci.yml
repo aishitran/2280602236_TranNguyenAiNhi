@@ -1,0 +1,22 @@
+name: CI Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          echo "Checking project files..."
+          test -f public/index.html
+          test -f public/styles.css
+          test -f public/js/main.js
+          echo "CI PASSED "
